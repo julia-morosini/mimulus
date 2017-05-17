@@ -1,0 +1,12 @@
+---
+title: "Untitled"
+author: "Giovanni Galli"
+date: "17/05/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![Figure 1. Number of linkage groups formed by combinations of LOD and r ](http://i.imgur.com/tbE7mko.png)
