@@ -4,5 +4,7 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Material and Methods"
+      href: MnM.html
     - text: "References"
-      href: references.html
+      href: references.html  

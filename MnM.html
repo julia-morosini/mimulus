@@ -11,7 +11,7 @@
 
 
 
-<title>References</title>
+<title>Material and Methods</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -196,16 +196,17 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">References</h1>
+<h1 class="title toc-ignore">Material and Methods</h1>
 
 </div>
 
 
-<p>Fishman, L.A., Kelly, J., Morgan, E., Willis, J.H., 2001 A genetic map in the Mimulus guttatus species complex reveals transmission ratio distortion due to heterospecific interactions. Genetics 159: 1701-1716.</p>
-<p>Kosambi, D.D., 1944 The estimation of map distance from recombination values. Annuaire of Eugenetics 12:172-175.</p>
-<p>Margarido, G.R., Souza, A.P, Garcia, A.A.F., 2007 OneMap: software for genetic mapping in outcrossing species. Hereditas 144:78-79.</p>
-<p>Voorrips, R.E., 2002 MapChart: software for the graphical presentation of linkage maps and QTLs. J. of Hered. 93: 77-78.</p>
-<p>Wu, R., Ma, C.-X., Painter, I. and Zeng, Z.-B. (2002) Simultaneous maximum likelihood estimation of linkage and linkage phases in outcrossing species. Theoretical Population Biology 61: 349-363.</p>
+<p>Mapping population and map construction The F2 mapping population was obtained from the interspecific cross between the M. guttatus and M. nasulus. It was composed by 287 individuals genotyped for 418 markers, 213 with segregation type 1:2:1 and 205 markers of the type 3:1. Analysis were performed using the OneMap v.2.0 (version under development) package for R (Margarido et al. 2007). Kosambi mapping function was utilized (Kosambi, 1944) to perform linkage map analysis. At last, MapChart2.2 (Voorrips, 2002) was used to draw the graphical map.</p>
+<p>As reported by Fishman et al. (2001), the genetic map of the referred population is composed by 14 linkage groups which equals its haploid number of chromosomes. Therefore, pairwise analysis (Wu et al., 2002) was performed using the rf_2pts() function, assiming minimum LOD score (LOD) and maximum recombination fraction (r) to declare linkage. These wariables were extensively searched (LOD = {3, 4, … ,13} and r = {0.30, 0.31, … , 0.50), to determine which combination results in 14 linkage groups (Figure 1). It was verified that using a LOD 8 and and r 0.38 we lead to the desired number of linkage groups. Unfortunately, the groups formed using these variable values showed little similarity to the original map. Therefore, we tried other parameter combinations that resulted in less linkage groups, like LOD 7 and r 0.31, that forms 13 groups. We verified that the coincidence with the original map was satisfactory, except for linkage group 7, that incorporate 2 linkages groups. We analyzed the heatmaps looking for markers with incoherent behavior. As those markers were identified, they we removed. This happened for linkage groups four, six and seven. Moreover, after removing 2 markers in linkage group 7 we could split it two groups. This way, a total of 14 linkage groups were formed, which agrees to the haploid number of chromosomes.</p>
+<div class="figure">
+<img src="http://i.imgur.com/tbE7mko.png" alt="Figure 1. Number of linkage groups formed by combinations of LOD and r" />
+<p class="caption">Figure 1. Number of linkage groups formed by combinations of LOD and r</p>
+</div>
 
 
 
