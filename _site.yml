@@ -4,5 +4,5 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "references"
+    - text: "References"
       href: references.html
