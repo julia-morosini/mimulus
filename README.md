@@ -1,2 +1,0 @@
-# mimulus
-Mimulus website
