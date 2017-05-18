@@ -1,10 +1,12 @@
-name: "my-website"
+name: "Mimulus Genetic Map"
 navbar:
-  title: "My Website"
+  title: "Mimulus Genetic Map"
   left:
     - text: "Home"
       href: index.html
     - text: "Material and Methods"
       href: MnM.html
+    - text: "Results"
+      href: results.html
     - text: "References"
       href: references.html  

@@ -171,7 +171,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">My Website</a>
+      <a class="navbar-brand" href="index.html">Mimulus Genetic Map</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -180,6 +180,9 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="MnM.html">Material and Methods</a>
+</li>
+<li>
+  <a href="results.html">Results</a>
 </li>
 <li>
   <a href="references.html">References</a>
@@ -202,11 +205,12 @@ $(document).ready(function () {
 
 
 <p>Mapping population and map construction The F2 mapping population was obtained from the interspecific cross between the M. guttatus and M. nasulus. It was composed by 287 individuals genotyped for 418 markers, 213 with segregation type 1:2:1 and 205 markers of the type 3:1. Analysis were performed using the OneMap v.2.0 (version under development) package for R (Margarido et al. 2007). Kosambi mapping function was utilized (Kosambi, 1944) to perform linkage map analysis. At last, MapChart2.2 (Voorrips, 2002) was used to draw the graphical map.</p>
-<p>As reported by Fishman et al. (2001), the genetic map of the referred population is composed by 14 linkage groups which equals its haploid number of chromosomes. Therefore, pairwise analysis (Wu et al., 2002) was performed using the rf_2pts() function, assiming minimum LOD score (LOD) and maximum recombination fraction (r) to declare linkage. These wariables were extensively searched (LOD = {3, 4, … ,13} and r = {0.30, 0.31, … , 0.50), to determine which combination results in 14 linkage groups (Figure 1). It was verified that using a LOD 8 and and r 0.38 we lead to the desired number of linkage groups. Unfortunately, the groups formed using these variable values showed little similarity to the original map. Therefore, we tried other parameter combinations that resulted in less linkage groups, like LOD 7 and r 0.31, that forms 13 groups. We verified that the coincidence with the original map was satisfactory, except for linkage group 7, that incorporate 2 linkages groups. We analyzed the heatmaps looking for markers with incoherent behavior. As those markers were identified, they we removed. This happened for linkage groups four, six and seven. Moreover, after removing 2 markers in linkage group 7 we could split it two groups. This way, a total of 14 linkage groups were formed, which agrees to the haploid number of chromosomes.</p>
+<p>As reported by Fishman et al. (2001), the genetic map of the referred population is composed by 14 linkage groups which equals its haploid number of chromosomes. Therefore, pairwise analysis (Wu et al., 2002) was performed using the rf_2pts() function, assiming minimum LOD score (LOD) and maximum recombination fraction (r) to declare linkage. These wariables were extensively searched (LOD = {3, 4, … ,13} and r = {0.30, 0.31, … , 0.50), to determine which combination results in 14 linkage groups (Figure 1). It was verified that using a LOD 8 and and r 0.38 we lead to the desired number of linkage groups. Unfortunately, the groups formed using these variable values showed little similarity to the original map. Therefore, we tried other parameter combinations that resulted in less linkage groups,LOD = 7 and r = 0.31 (Gray mark on Figure 1), that forms 13 groups. We decided to choose LOD = 7 over LOD = 8 due to its greater proximity to the suggested value assessed by the function suggest_lod() (5,43). We verified that the coincidence with the original map was satisfactory, except for linkage group 7, that incorporated 2 linkages groups.</p>
 <div class="figure">
 <img src="http://i.imgur.com/tbE7mko.png" alt="Figure 1. Number of linkage groups formed by combinations of LOD and r" />
 <p class="caption">Figure 1. Number of linkage groups formed by combinations of LOD and r</p>
 </div>
+<p>We analyzed the heatmaps looking for markers with incoherent behavior. As those markers were identified, they we removed. This happened for linkage groups four, six and seven. Moreover, after removing 2 markers in linkage group 7 we could split it two groups.</p>
 
 
 
