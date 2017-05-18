@@ -6,7 +6,6 @@ output: html_document
 <style>
 body {
 text-align: justify;
-font-family: Oregon LDO Book;
 font-size: 2em
 }
 </style>
@@ -16,7 +15,11 @@ The F2 mapping population was obtained from the interspecific cross between theÂ
 
 As reported by Fishman et al. (2001), the genetic map of the referred population is composed by 14 linkage groups which equals its haploid number of chromosomes. Therefore, pairwise analysis (Wu et al., 2002)Â was performed using the rf_2pts() function, assiming minimum LOD score (LOD) and maximum recombination fraction (r) to declare linkage. These wariables were extensively searched (LOD = {3, 4, ... ,13} and r = {0.30, 0.31, ... , 0.50), to determine which combination results in 14 linkage groups (Figure 1). It was verified that using a LOD 8 and and r 0.38 we lead to the desired number of linkage groups. Unfortunately, the groups formed using these variable values showed little similarity to the original map. Therefore, we tried other parameter combinations that resulted in less linkage groups,LOD = 7 and r = 0.31 (Gray mark on Figure 1), that forms 13 groups. We decided to choose LOD = 7 over LOD = 8 due to its greater proximity to the suggested value assessed by the function suggest_lod() (5,43). We verified that the coincidence with the original map was satisfactory, except for linkage group 7, that incorporated 2 linkages groups. 
 
-![Figure 1. Number of linkage groups formed by combinations of LOD and r ](http://i.imgur.com/tbE7mko.png)
+<!-- ![Figure 1. Number of linkage groups formed by combinations of LOD and r ](http://i.imgur.com/tbE7mko.png) -->
+
+<p align="center">
+<img src="http://i.imgur.com/tbE7mko.png" width="400" align = "center">
+</p>
 
 We analyzed the heatmaps looking for markers with incoherent behavior. As those markers were identified, they we removed. This happened for linkage groups four, six and seven. Moreover, after removing 2 markers in linkage group 7 we could split it two groups.
 
