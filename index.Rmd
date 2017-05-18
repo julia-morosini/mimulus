@@ -1,6 +1,7 @@
 ---
 title: "About"
 
+
 author: | 
   | Giovanni Galli^1^, Leandro Mendonça^1^, Júlia Morosini^1^ and Humberto Carvalho^2^  
   |
@@ -9,5 +10,14 @@ author: |
   
 output: html_document
 ---
+<style>
+body {
+text-align: justify;
+font-family: Oregon LDO Book;
+font-size: 2em
+}
+</style>
+
+Previously, Fishman et al., (2001) published a genetic map of the Mimulus guttatus species in heterospecific interactions. Using 174 markers, the authors obtained 14 linkage groups with a total map length of 1780 cM Kosambi. A new data set of the same population is now available with 418 markers. Therefore, as required for Prof. Dr. Antonio Augusto Franco Garcia in his lecture on Biometry of Genetic Markers (augusto-garcia.github.io/Biometria-de-Marcadores/), our research group estimated a new linkage map for Mimulus guttatus based on the new data set. Procedure and results are shown in Material and Methods and Results, respectively. We also made a video (Link), explaining how analysis were performed. 
 
 ![](http://i.imgur.com/NCQCqCX.jpg)

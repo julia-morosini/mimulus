@@ -3,9 +3,13 @@ title: "Material and Methods"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<style>
+body {
+text-align: justify;
+font-family: Oregon LDO Book;
+font-size: 2em
+}
+</style>
 
 Mapping population and map construction
 The F2 mapping population was obtained from the interspecific cross between the M. guttatus and M. nasulus. It was composed by 287 individuals genotyped for 418 markers, 213 with segregation type 1:2:1 and 205 markers of the type 3:1.  Analysis were performed using the OneMap v.2.0 (version under development) package for R (Margarido et al. 2007). Kosambi mapping function was utilized (Kosambi, 1944) to perform linkage map analysis. At last, MapChart2.2 (Voorrips, 2002) was used to draw the graphical map.

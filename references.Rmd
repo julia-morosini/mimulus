@@ -2,6 +2,14 @@
 title: "References"
 ---
 
+<style>
+body {
+text-align: justify;
+font-family: Oregon LDO Book;
+font-size: 2em
+}
+</style>
+
 Fishman, L.A., Kelly, J., Morgan, E., Willis, J.H., 2001 A genetic map in the Mimulus guttatus species complex reveals transmission ratio distortion due to heterospecific interactions. Genetics 159: 1701-1716.
 
 Kosambi, D.D., 1944 The estimation of map distance from recombination values. Annuaire of Eugenetics 12:172-175.

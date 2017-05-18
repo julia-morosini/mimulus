@@ -3,9 +3,13 @@ title: "Results"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<style>
+body {
+text-align: justify;
+font-family: Oregon LDO Book;
+font-size: 2em
+}
+</style>
 
 A total of 14 linkage groups were formed (Figure 1), which agrees to the haploid number of chromosomes. The genetic map drawn with MapChart is presented in Figure 2.
 
