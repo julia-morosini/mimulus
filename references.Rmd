@@ -5,6 +5,7 @@ title: "References"
 <style>
 body {
 text-align: justify;
+font-family: Times;
 font-size: 2em
 }
 </style>

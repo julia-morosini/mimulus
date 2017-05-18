@@ -6,6 +6,7 @@ output: html_document
 <style>
 body {
 text-align: justify;
+font-family: Times;
 font-size: 2em
 }
 </style>
@@ -18,8 +19,9 @@ As reported by Fishman et al. (2001), the genetic map of the referred population
 <!-- ![Figure 1. Number of linkage groups formed by combinations of LOD and r ](http://i.imgur.com/tbE7mko.png) -->
 
 <p align="center">
-<img src="http://i.imgur.com/tbE7mko.png" width="400" align = "center">
+<img src="http://i.imgur.com/tbE7mko.png" width="600" align = "center">
 </p>
+Figure 1. Number of linkage groups formed by combinations of LOD and r
 
 We analyzed the heatmaps looking for markers with incoherent behavior. As those markers were identified, they we removed. This happened for linkage groups four, six and seven. Moreover, after removing 2 markers in linkage group 7 we could split it two groups.
 
