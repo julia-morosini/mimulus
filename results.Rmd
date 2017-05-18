@@ -7,6 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-A total of 14 linkage groups were formed (Figure 1), which agrees to the haploid number of chromosomes.
+A total of 14 linkage groups were formed (Figure 1), which agrees to the haploid number of chromosomes. The genetic map drawn with MapChart is presented in Figure 2.
 
-![Figure 1. Heatmaps of all 14 linkage groups](http://i.imgur.com/qMIFIdk.png)
+![Figure 1. Heatmaps of all 14 linkage groups](http://i.imgur.com/ENKc4Ut.png)
+
+
+![Figure 2. MapChart drawing of linkage groups.](http://i.imgur.com/VrNcNSr.jpg)
