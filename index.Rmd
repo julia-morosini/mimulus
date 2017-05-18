@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "About"
 
 author: | 
   | Giovanni Galli^1^, Leandro Mendonça^1^, Júlia Morosini^1^ and Humberto Carvalho^2^  
@@ -9,3 +9,5 @@ author: |
   
 output: html_document
 ---
+
+![](http://i.imgur.com/NCQCqCX.jpg)
