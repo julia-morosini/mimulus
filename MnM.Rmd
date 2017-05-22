@@ -26,5 +26,5 @@ Figure 1. Number of linkage groups formed by combinations of LOD and r
 
 We analyzed the heatmaps looking for markers with incoherent behavior. As those markers were identified, they we removed. This happened for linkage groups four, six and seven. Moreover, after removing 2 markers in linkage group 7 we could split it two groups.
 
-
+The code utilized for carrying out the analysis can be found [here](https://github.com/giovannigalli/mimulus/blob/gh-pages/Script.R).
 
