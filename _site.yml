@@ -6,7 +6,7 @@ navbar:
       href: index.html
     - text: "Material and Methods"
       href: MnM.html
-    - text: "Results"
-      href: results.html
+    - text: "Mapa"
+      href: mapa.html
     - text: "References"
       href: references.html  

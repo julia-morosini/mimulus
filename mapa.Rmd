@@ -1,0 +1,22 @@
+---
+title: "Mapa"
+output: html_document
+---
+
+<style>
+body {
+text-align: justify;
+font-family: Times;
+font-size: 2em
+}
+</style>
+
+A total of 14 linkage groups were formed (Figure 1), which agrees to the haploid number of chromosomes. The genetic map drawn with MapChart is presented in Figure 2.
+
+<p align="center">
+![Figure 1. Heatmaps of all 14 linkage groups](http://i.imgur.com/ENKc4Ut.png)
+
+
+![](http://i.imgur.com/VrNcNSr.jpg)
+</p>
+Figure 2. MapChart drawing of linkage groups.
