@@ -10,6 +10,10 @@ font-size: 2em
 }
 </style>
 
+Broman, K. W., and S. Sen, 2009 A Guide to QTL Mapping with R/qtl, Vol. 46. Springer, New York.
+
+Broman, K. W., H. Wu, S. Sen, and G. A. Churchill, 2003 R/qtl: QTL mapping in experimental crosses. Bioinformatics 19: 889–890.
+
 Fishman, L.A., Kelly, J., Morgan, E., Willis, J.H., 2001 A genetic map in the Mimulus guttatus species complex reveals transmission ratio distortion due to heterospecific interactions. Genetics 159: 1701-1716.
 
 Kosambi, D.D., 1944 The estimation of map distance from recombination values. Annuaire of Eugenetics 12:172-175.

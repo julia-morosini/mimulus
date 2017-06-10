@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>QTL Mapping</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Mimulus Genetic Map and QTL Analysis</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li>
+  <a href="MnM.html">Material and Methods</a>
+</li>
+<li>
+  <a href="mapa.html">Genetic Map</a>
+</li>
+<li>
+  <a href="qtl.html">QTL Mapping</a>
+</li>
+<li>
+  <a href="references.html">References</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">QTL Mapping</h1>
+
+</div>
+
+
+<style>
+body {
+text-align: justify;
+font-family: Times;
+font-size: 2em
+}
+</style>
+<p>  </p>
+<p><em>Interval Mapping</em></p>
+<p>The estimated threshold for both methods (EM and HK) were similar (Figure 1.A and Figure 1.B). This similarity conducted to an equal QTL detection, on what, 3 QTLs was found for the trait analyzed (Figure 1.C and Figure 1.D). Expectation Maximization and Halley-Knot presented similar results (Figure 1.E) Those QTLs were found in chromosome 6, 13 and 14 (Figure 1.F). The position and LOD of these are shown in Table 1.</p>
+<div class="figure">
+<img src="http://i.imgur.com/jR6ceIR.png" alt="Figure 1. Results from interval mapping of pollen viability in Mimulus. A: Histogram of maximum LOD obtained by 10,000 permutations using EM; B: Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C: LOD profile of IM-EM based QTL mapping; D: LOD profile of IM-Halley Knot based QTL mapping; E: LOD profile comparison accross genome of EM and HK based IM QTL mapping; F: LOD profile comparison of QTL regions of EM and HK based IM QTL mapping." />
+<p class="caption">Figure 1. Results from interval mapping of pollen viability in Mimulus. A: Histogram of maximum LOD obtained by 10,000 permutations using EM; B: Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C: LOD profile of IM-EM based QTL mapping; D: LOD profile of IM-Halley Knot based QTL mapping; E: LOD profile comparison accross genome of EM and HK based IM QTL mapping; F: LOD profile comparison of QTL regions of EM and HK based IM QTL mapping.</p>
+</div>
+<p>  </p>
+<p>Table 1. Linkage group, Postition and LOD of identified QTLs by Interval Mapping.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Linkage Group</th>
+<th align="right">Position</th>
+<th align="right">LOD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">6</td>
+<td align="right">186</td>
+<td align="right">4.23</td>
+</tr>
+<tr class="even">
+<td align="right">13</td>
+<td align="right">58</td>
+<td align="right">8.31</td>
+</tr>
+<tr class="odd">
+<td align="right">14</td>
+<td align="right">275</td>
+<td align="right">3.90</td>
+</tr>
+</tbody>
+</table>
+<p>  </p>
+<p><em>Composed Interval Mapping</em></p>
+<p>For CIM, EM and HK methods were similar as well (Figure 2.A and Figure 2.B), but in this case, only 2 QTL were detected (Figure 2.C and Figure 2.D). Expectation Maximization and Halley-Knot presented similar results (Figure 2.E). These 2 QTL were the same detected by IM in chromosome 6 and 13. The QTL on linkage group 14 wasn’t detected here (Figure 2.F). The position and LOD of QTLs found by CIM are shown in Table 2.</p>
+<div class="figure">
+<img src="http://i.imgur.com/XodAzbW.png" alt="Figure 2. Results from composinte interval mapping of pollen viability in Mimulus. A: Histogram of maximum LOD obtained by 10,000 permutations using EM; B: Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C: LOD profile of IM-EM based QTL mapping; D: LOD profile of IM-Halley Knot based QTL mapping; E: LOD profile comparison accross genome of EM and HK based IM QTL mapping; F: LOD profile comparison of QTL regions of EM and HK based IM QTL mapping." />
+<p class="caption">Figure 2. Results from composinte interval mapping of pollen viability in Mimulus. A: Histogram of maximum LOD obtained by 10,000 permutations using EM; B: Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C: LOD profile of IM-EM based QTL mapping; D: LOD profile of IM-Halley Knot based QTL mapping; E: LOD profile comparison accross genome of EM and HK based IM QTL mapping; F: LOD profile comparison of QTL regions of EM and HK based IM QTL mapping.</p>
+</div>
+<p>  </p>
+<p>Table 2. Linkage group, Postition and LOD of identified QTLs by Composite Interaval Mapping.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Linkage.Group</th>
+<th align="right">Position</th>
+<th align="right">LOD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">6</td>
+<td align="right">185</td>
+<td align="right">6.19</td>
+</tr>
+<tr class="even">
+<td align="right">13</td>
+<td align="right">58</td>
+<td align="right">10.42</td>
+</tr>
+</tbody>
+</table>
+<p>Differences between IM and CIM using Expectation Maximization (Figure 3.A) and Halley-Knot (Figure 3.B) are presented. Comparing the IM and CIM we verified a more accurate estimation of the position of the QTLs detected (Figure 3.C (chromossome 6) and Figure 3.D (chromossome 13)). While in IM the LOD curve is wide, increasing the confidence interval of the position, in CIM the LOD curves are narrow.</p>
+<div class="figure">
+<img src="http://i.imgur.com/lBK2aNm.png" alt="Figure 3. Results from interval and composinte interval mapping of pollen viability in Mimulus. A: Comparison of LOD profile of IM and CIM QTL mapping based on EM; B: Comparison of LOD profile of IM and CIM QTL mapping based on HK; C: Comparison of IM and CIM at chromosome 6; D: Comparison of IM and CIM at chromosome 13." />
+<p class="caption">Figure 3. Results from interval and composinte interval mapping of pollen viability in Mimulus. A: Comparison of LOD profile of IM and CIM QTL mapping based on EM; B: Comparison of LOD profile of IM and CIM QTL mapping based on HK; C: Comparison of IM and CIM at chromosome 6; D: Comparison of IM and CIM at chromosome 13.</p>
+</div>
+<p>  </p>
+<p><em>Multiple Interval Mapping</em></p>
+<p>Genetic map with identified QTL are presented in Figure 4.A. Using MIM, we also detected 3 QTL, but one of them was different . QTLs in the linkage group 6 and 13 were identified, as in IM and CIM, and a new one was found in linkage group 8 (Figure 4.B). This new QTL had smaller effect compared to the other (Table 3). A great advantage in the use of MIM is the possibility to verify epistatic interactions between QLTs. Therefore, we can check that QTL in chromosome 6 and 13 interact (Figure das bolinhas ligadas), what may explain the detection of both in all QTL methods used. Comparing the LOD score curve of CIM and MIM, it is possible to confirm that they detected QTL 6 and 13 in the same position, once the peak of curves was too close (Figure 4.D). Peak on chromosome 8 for CIM was also identified, but not enough to cross the permutation threshhold.</p>
+<div class="figure">
+<img src="http://i.imgur.com/JcMAlUX.png" alt="Figure 4. Results from multiple interval mapping of pollen viability in Mimulus. A: Genetic map estimated from MIM; B: LOD profile obtained from MIM; C: LOD profile obtained from CIM; D: Comparison of CIM and MIM at significant QTL from MIM." />
+<p class="caption">Figure 4. Results from multiple interval mapping of pollen viability in Mimulus. A: Genetic map estimated from MIM; B: LOD profile obtained from MIM; C: LOD profile obtained from CIM; D: Comparison of CIM and MIM at significant QTL from MIM.</p>
+</div>
+<p>  </p>
+<p>Table 3. Comparison of CIM and MIM identified QTL.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">CIM</th>
+<th align="right">MIM</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Chr 6 - pos 185</td>
+<td align="right">Chr 6 - pos 186</td>
+</tr>
+<tr class="even">
+<td align="right">-</td>
+<td align="right">Chr 8 - pos 87</td>
+</tr>
+<tr class="odd">
+<td align="right">Chr 13 - pos 58</td>
+<td align="right">Chr 13 - pos 56</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

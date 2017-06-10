@@ -1,12 +1,14 @@
-name: "Mimulus Genetic Map"
+name: "Mimulus Genetic Map and QTL Analysis"
 navbar:
-  title: "Mimulus Genetic Map"
+  title: "Mimulus Genetic Map and QTL Analysis"
   left:
     - text: "About"
       href: index.html
     - text: "Material and Methods"
       href: MnM.html
-    - text: "Mapa"
+    - text: "Genetic Map"
       href: mapa.html
+    - text: "QTL Mapping"
+      href: qtl.html
     - text: "References"
       href: references.html  

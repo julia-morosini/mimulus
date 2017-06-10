@@ -171,7 +171,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Mimulus Genetic Map</a>
+      <a class="navbar-brand" href="index.html">Mimulus Genetic Map and QTL Analysis</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -182,7 +182,10 @@ $(document).ready(function () {
   <a href="MnM.html">Material and Methods</a>
 </li>
 <li>
-  <a href="mapa.html">Mapa</a>
+  <a href="mapa.html">Genetic Map</a>
+</li>
+<li>
+  <a href="qtl.html">QTL Mapping</a>
 </li>
 <li>
   <a href="references.html">References</a>
@@ -211,8 +214,12 @@ font-family: Times;
 font-size: 2em
 }
 </style>
-<p>The F2 mapping population was obtained from the interspecific cross between the <em>M. guttatus</em> and <em>M. nasulus</em>. It was composed by 287 individuals genotyped for 418 markers. Analysis were performed using the OneMap v.2.0 (version under development) package for R (Margarido et al. 2007). Kosambi mapping function was utilized (Kosambi, 1944) to perform linkage map analysis. At last, MapChart2.2 (Voorrips, 2002) was used to draw the graphical map.</p>
-<p>As reported by Fishman et al. (2001), the genetic map of the referred population is composed by 14 linkage groups which equals its haploid number of chromosomes. Therefore, pairwise analysis (Wu et al., 2002) was performed using the rf_2pts() function, assuming minimum LOD score (LOD) and maximum recombination fraction (r) to declare linkage. These variables were extensively searched (LOD = {3, 4, … ,13} and r = {0.30, 0.31, … , 0.50), to determine which combination results in 14 linkage groups (Figure 1). It was verified that the use of Lod 8 and r 0,38 led to the desired number of linkage groups. Unfortunately, the groups formed using these variable values showed little similarity to the original map. Therefore, we tried other parameter combinations that resulted in less linkage groups, LOD = 7 and r = 0.31 (grey mark on Figure 1), that forms 13 groups. We decided to choose LOD = 7 over LOD = 8 due to its greater proximity to the suggested value assessed by the function suggest_lod() (5,43). We verified that the coincidence with the original map was satisfactory, except for linkage group 7, that incorporated 2 linkages groups.</p>
+<p><em>The dataset</em></p>
+<p>The F2 mapping population was obtained from the interspecific cross between theÂ <em>M. guttatus</em>Â andÂ <em>M. nasulus</em>. It was composed by 287 individuals genotyped for 418 markers.</p>
+<p>  </p>
+<p><em>Map construction</em></p>
+<p>Analysis were performed using the OneMap v.2.0 (version under development) package for R (Margarido et al. 2007). Kosambi mapping function was utilized (Kosambi, 1944) to perform linkage map analysis. MapChart2.2 (Voorrips, 2002) was used to draw the graphical map.</p>
+<p>As reported by Fishman et al. (2001), the genetic map of the referred population is composed by 14 linkage groups which equals its haploid number of chromosomes. Therefore, pairwise analysis (Wu et al., 2002)Â was performed using the rf_2pts() function, assuming minimum LOD score (LOD) and maximum recombination fraction (r) to declare linkage. These variables were extensively searched (LOD = {3, 4, … ,13} and r = {0.30, 0.31, … , 0.50), to determine which combination results in 14 linkage groups (Figure 1). It was verified that the use of Lod 8 and r 0,38 led to the desired number of linkage groups. Unfortunately, the groups formed using these variable values showed little similarity to the original map. Therefore, we tried other parameter combinations that resulted in less linkage groups, LOD = 7 and r = 0.31 (grey mark on Figure 1), that forms 13 groups. We decided to choose LOD = 7 over LOD = 8 due to its greater proximity to the suggested value assessed by the function suggest_lod() (5,43). We verified that the coincidence with the original map was satisfactory, except for linkage group 7, that incorporated 2 linkages groups.</p>
 <p align="center">
 <img src="http://i.imgur.com/tbE7mko.png" width="600" align = "center">
 </p>
@@ -220,7 +227,13 @@ font-size: 2em
 Figure 1. Number of linkage groups formed by combinations of LOD and r
 </p>
 <p>We analyzed the heatmaps looking for markers with incoherent behavior. As those markers were identified, they we removed. This happened for linkage groups four, six and seven. Moreover, after removing 2 markers in linkage group 7 we could split it two groups.</p>
-<p>The code utilized for carrying out the analysis can be found <a href="https://github.com/giovannigalli/mimulus/blob/gh-pages/Script.R">here</a>.</p>
+<p>  </p>
+<p><em>QTL Analysis</em></p>
+<p>The aforementioned map was utilized for QTL mapping using R package R/qtl (Broman et al., 2003). To this end, three methods of QTL mapping were used, namely, Interval Mapping (IM), Composed Interval Mapping (CIM) and Multiple Interval Mapping (MIM).</p>
+<p>IM is a strategy that allows us to infer about markers in any party of the genome. The genotype of these pseudo markers was estimated based on the genotype of flanking markers, using Expectation Maximization (EM), or Haley-Knott regression (HK). Therefore, we used a step size of 1 cM and under EM and HK methods. Additionally, to determinate LOD significance threshold, we performed 10,000 permutations and considered Î± = 0.05.</p>
+<p>CIM is similar to IM, however, we use a number of markers as cofactors in the model. These cofactors are used to avoid the interference of other regions of the genome in the test of a specific position. This strategy makes the test more independent of effects arising from other regions. The number of cofactors used was based on the number of QTLs detected in the IM (3 cofactors), and windows size was 10 cM. Similarly to IM, we used both EM and HK methods to estimate the intervals. LOD significance threshold was also determined by permutation.</p>
+<p>Finally, we performed MIM, a method that considers simultaneously the effect of multiple QTLs in the model. Additionally, using orthogonal contrasts, this model allows us to include the epistasis effect to check if the detected QTLs interact (Broman and Sen, 2009). The number of QTLs was not known a priori, so, the function search for QTL with the highest LODs and them add new QTLs with independent effect or QTLs that show interaction with the previous one. Procedure was performed by the given steps: 1. Run ‘stepwise()’ function to spicify the best model of main effects and interactions; 2. Based on QTL identified on step 1, ‘makeqtl()’ function was utilized; 3. The object from step 2 was utilized to refine the possition of the identified QTL with ‘refineqtl()’; and 4: fit a model with the most probable model with enhanced positions to estimate effects of QTLs.</p>
+<p>Here, find attached the code utilized for carrying out the analysis of <a href="https://github.com/giovannigalli/mimulus/blob/gh-pages/ScriptMap.R">Genetic Map</a> and <a href="">QTL Mapping</a>.</p>
 
 
 
