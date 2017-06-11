@@ -55,7 +55,7 @@ Differences between IM and CIM using Expectation Maximization (Figure 3.A) and H
 
 \ \ 
 
-![Figure 4: Phenotype by genotype at the marker correspondent to QTL 6 (A and B) and QTL 13 (C and D)](http://i.imgur.com/MDJVlfR.png)
+![Figure 4: Phenotype by genotype at the marker correspondent to QTL 13 (A and B) and QTL 6 (C and D)](http://i.imgur.com/MDJVlfR.png)
 
 \ \ 
 
