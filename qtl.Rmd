@@ -24,48 +24,57 @@ The estimated threshold for both methods (EM and HK) were similar (Figure 1.A an
   
 Table 1. Linkage group, Postition and LOD of identified QTLs by Interval Mapping.
 
-| Linkage Group| Position|  LOD|
-|-------------:|--------:|----:|
-|             6|      186| 4.23|
-|            13|       58| 8.31|
-|            14|      275| 3.90|
+|     |  __IM__ |      |
+|:---:|:---:|:----:|
+| _Chr_ | _Pos_ |  _Lod_ |
+|  6  | 186 | 4.23 |
+|  13 |  58 | 8.31 |
+|  14 | 275 | 3.90 |
 
 \ \ 
 
-*Composed Interval Mapping*
+*Composite Interval Mapping*
 
 For CIM, EM and HK methods were similar as well (Figure 2.A and Figure 2.B), but in this case, only 2 QTL were detected (Figure 2.C and Figure 2.D). Expectation Maximization and Halley-Knot presented similar results (Figure 2.E). These 2 QTL were the same detected by IM in chromosome 6 and 13. The QTL on linkage group 14 wasn't detected here (Figure 2.F). The position and LOD of QTLs found by CIM are shown in Table 2.
 
-![Figure 2. Results from composinte interval mapping of pollen viability in Mimulus. A: Histogram of maximum LOD obtained by 10,000 permutations using EM; B: Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C: LOD profile of IM-EM based QTL mapping; D: LOD profile of IM-Halley Knot based QTL mapping; E: LOD profile comparison accross genome of EM and HK based IM QTL mapping; F: LOD profile comparison of QTL regions of EM and HK based IM QTL mapping.](http://i.imgur.com/XodAzbW.png)
+![Figure 2. Results from composinte interval mapping of pollen viability in Mimulus. A: Histogram of maximum LOD obtained by 10,000 permutations using EM; B: Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C: LOD profile of IM-EM based QTL mapping; D: LOD profile of IM-Halley Knot based QTL mapping; E: LOD profile comparison accross genome of EM and HK based IM QTL mapping; F: LOD profile comparison of QTL regions of EM and HK based IM QTL mapping.](http://i.imgur.com/gFrdJpH.png)
 
 \ \ 
 
 Table 2. Linkage group, Postition and LOD of identified QTLs by Composite Interaval Mapping.
 
-| Linkage Group| Position|   LOD|
-|-------------:|--------:|-----:|
-|             6|      185|  6.19|
-|            13|       58| 10.42|
+|     | __CIM__ |       |
+|:---:|:---:|:-----:|
+| _Chr_ | _Pos_ |  _Lod_  |
+|  6  | 185 |  6.11 |
+|  13 |  58 | 10.58 |
 
 Differences between IM and CIM using Expectation Maximization (Figure 3.A) and Halley-Knot (Figure 3.B) are presented. Comparing the IM and CIM we verified a more accurate estimation of the position of the QTLs detected (Figure 3.C (chromossome 6) and Figure 3.D (chromossome 13)). While in IM the LOD curve is wide, increasing the confidence interval of the position, in CIM the LOD curves are narrow.
 
-![Figure 3. Results from interval and composinte interval mapping of pollen viability in Mimulus. A: Comparison of LOD profile of IM and CIM QTL mapping based on EM; B: Comparison of LOD profile of IM and CIM QTL mapping based on HK; C: Comparison of IM and CIM at chromosome 6; D: Comparison of IM and CIM at chromosome 13.](http://i.imgur.com/lBK2aNm.png)
+![Figure 3. Results from interval and composinte interval mapping of pollen viability in Mimulus. A: Comparison of LOD profile of IM and CIM QTL mapping based on EM; B: Comparison of LOD profile of IM and CIM QTL mapping based on HK; C: Comparison of IM and CIM at chromosome 6; D: Comparison of IM and CIM at chromosome 13.](http://i.imgur.com/mYubLD0.png)
+
+\ \ 
+
+![Figure 4. DESCRIPTION](http://i.imgur.com/XxSLcV5.png)
 
 \ \ 
 
 *Multiple Interval Mapping*
 
-Genetic map with identified QTL are presented in Figure 4.A. Using MIM, we also detected 3 QTL, but one of them was different . QTLs in the linkage group 6 and 13 were identified, as in IM and CIM, and a new one was found in linkage group 8 (Figure 4.B). This new QTL had smaller effect compared to the other (Table 3). 
-A great advantage in the use of MIM is the possibility to verify epistatic interactions between QLTs. Therefore, we can check that QTL in chromosome 6 and 13 interact (Figure das bolinhas ligadas), what may explain the detection of both in all QTL methods used. Comparing the LOD score curve of CIM and MIM, it is possible to confirm that they detected QTL 6 and 13 in the same position, once the peak of curves was too close (Figure 4.D). Peak on chromosome 8 for CIM was also identified, but not enough to cross the permutation threshhold.
+Genetic map with identified QTL are presented in Figure 5.A. Using MIM, we also detected 3 QTL, but one of them was different . QTLs in the linkage group 6 and 13 were identified, as in IM and CIM, and a new one was found in linkage group 8 (Figure 5.B). This new QTL had smaller effect compared to the other (Table 3). 
+A great advantage in the use of MIM is the possibility to verify epistatic interactions between QLTs. Therefore, we can check that QTL in chromosome 6 and 13 interact (Figure das bolinhas ligadas), what may explain the detection of both in all QTL methods used. Comparing the LOD score curve of CIM and MIM, it is possible to confirm that they detected QTL 6 and 13 in the same position, once the peak of curves was too close (Figure 5.D). Peak on chromosome 8 for CIM was also identified, but not enough to cross the permutation threshhold.
 
-![Figure 4. Results from multiple interval mapping of pollen viability in Mimulus. A: Genetic map estimated from MIM; B: LOD profile obtained from MIM; C: LOD profile obtained from CIM; D: Comparison of CIM and MIM at significant QTL from MIM.](http://i.imgur.com/JcMAlUX.png)
+![Figure 5. Results from multiple interval mapping of pollen viability in Mimulus. A: Genetic map estimated from MIM; B: LOD profile obtained from MIM; C: LOD profile obtained from CIM; D: Comparison of CIM and MIM at significant QTL from MIM.](http://i.imgur.com/JcMAlUX.png)
+
+![Figure 6: QTL interaction](http://i.imgur.com/1RzMPrN.png)
 
 \ \ 
 
 Table 3. Comparison of CIM and MIM identified QTL.
 
-|              CIM|              MIM|
-|----------------:|----------------:|
-|  Chr 6 - pos 185|  Chr 6 - pos 186|
-|        -        |   Chr 8 - pos 87|
-|  Chr 13 - pos 58|  Chr 13 - pos 56|
+|     | __CIM__ |       |   |     |     |  __MIM__  |             |       |
+|:---:|:---:|:-----:|:-:|:---:|:---:|:-----:|:-----------:|:-----:|
+| _Chr_ | _Pos_ |  _Lod_  |   | _Chr_ | _Pos_ |  _Lod_  |  _Effect a/d_ |   _$R^2$_  |
+|  6  | 185 |  6.11 |   |  6  | 186 | 13.51 | -0.12/-0.06 | 16.76 |
+|  -  |  -  |   -   |   |  8  |  87 |  4.48 |  0.08/-0.01 |  5.15 |
+|  13 |  58 | 10.58 |   |  13 |  56 | 18.47 |  0.14/0.13  | 23.94 |
