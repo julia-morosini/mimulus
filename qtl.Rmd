@@ -16,9 +16,10 @@ font-size: 2em
 
 *Interval Mapping*
 
-The estimated threshold for both methods (EM and HK) were similar (Figure 1.A and Figure 1.B). This similarity conducted to an equal QTL detection, on what, 3 QTLs was found for the trait analyzed (Figure 1.C and Figure 1.D). Expectation Maximization and Halley-Knot presented similar results (Figure 1.E) Those QTLs were found in chromosome 6, 13 and 14 (Figure 1.F). The position and LOD of these are shown in Table 1. 
+The estimated thresholds using Expectation Maximization (EM) algorithm and Halley-Knott (HK) approximation were similar (Figure 1.A and Figure 1.B), which conducted to an equal detection of 3 QTLs for the analyzed trait, pollen viability (Figure 1.C and Figure 1.D). Both methods performed mapping similarly, drawn using their respective LOD scores (Figure 1.E). The detected QTLs are in chromosome 6, 13 and 14 (Figure 1.F), and their detailed information is shown in Table 1.
+ 
 
-![Figure 1. Results from interval mapping of pollen viability in Mimulus. A: Histogram of maximum LOD obtained by 10,000 permutations using EM; B: Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C: LOD profile of IM-EM based QTL mapping; D: LOD profile of IM-Halley Knot based QTL mapping; E: LOD profile comparison accross genome of EM (blue) and HK (magenta) based IM QTL mapping; F: LOD profile comparison of QTL regions of EM (blue) and HK (orange) based IM QTL mapping.](http://i.imgur.com/jR6ceIR.png)
+![Figure 1. Results from Interval Mapping (IM) for pollen viability trait in Mimulus sp. A) Histogram of maximum LOD obtained by 10,000 permutations using EM; B) Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C) LOD profile of IM-EM based QTL mapping; D) LOD profile of IM-Halley Knot based QTL mapping; E) LOD profile comparison between EM (blue) and HK (magenta) based on IM QTL mapping; F: LOD profile comparison of QTL regions between EM (blue) and HK (orange) based on IM QTL mapping.](http://i.imgur.com/jR6ceIR.png)
 
   \ \ 
   
@@ -35,9 +36,10 @@ Table 1. Linkage group, Postition and LOD of identified QTLs by Interval Mapping
 
 *Composite Interval Mapping*
 
-For CIM, EM and HK methods were similar as well (Figure 2.A and Figure 2.B), but in this case, only 2 QTL were detected (Figure 2.C and Figure 2.D). Expectation Maximization and Halley-Knot presented similar results (Figure 2.E). These 2 QTL were the same detected by IM in chromosome 6 and 13. The QTL on linkage group 14 wasn't detected here (Figure 2.F). The position and LOD of QTLs found by CIM are shown in Table 2.
+For CIM, EM and HK presented similar results as well (Figure 2.A and Figure 2.B), but only 2 QTL were detected (Figure 2.C and Figure 2.D). As observed for Interval Mapping, EM and HK methods performed mapping similarly once again, drawn using their respective LOD scores (Figure 2.E). The 2 detected QTL are coincident with those pointed out by IM in chromosomes 6 and 13 (Figure 2.F). Their respective position and LOD are shown in Table 2. For each detected QTL, the nearest marker was considered and each genotype was plotted against the phenotypic mean, with error bars at ± 1 SE (Figure 3).
 
-![Figure 2. Results from composinte interval mapping of pollen viability in Mimulus. A: Histogram of maximum LOD obtained by 10,000 permutations using EM; B: Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C: LOD profile of IM-EM based QTL mapping; D: LOD profile of IM-Halley Knot based QTL mapping; E: LOD profile comparison accross genome of EM (blue) and HK (magenta) based IM QTL mapping; F: LOD profile comparison of QTL regions of EM (blue) and HK (orange) based IM QTL mapping.](http://i.imgur.com/gFrdJpH.png)
+
+![Figure 2. Results from Composite Interval Mapping (CIM) for pollen viability trait in Mimulus sp. A) Histogram of maximum LOD obtained by 10,000 permutations using EM; B) Histogram of maximum LOD obtained by 10,000 permutations using Halley-Knot; C) LOD profile of IM-EM based QTL mapping; D) LOD profile of IM-Halley Knot based QTL mapping; E) LOD profile comparison between EM (blue) and HK (magenta) based on CIM QTL mapping; F) LOD profile comparison of QTL regions between EM (blue) and HK (orange) based on CIM QTL mapping.](http://i.imgur.com/gFrdJpH.png)
 
 \ \ 
 
@@ -49,24 +51,25 @@ Table 2. Linkage group, Postition and LOD of identified QTLs by Composite Intera
 |  6  | 185 |  6.11 |
 |  13 |  58 | 10.58 |
 
-Differences between IM and CIM using Expectation Maximization (Figure 3.A) and Halley-Knot (Figure 3.B) are presented. Comparing the IM and CIM we verified a more accurate estimation of the position of the QTLs detected (Figure 3.C (chromossome 6) and Figure 3.D (chromossome 13)). While in IM the LOD curve is wide, increasing the confidence interval of the position, in CIM the LOD curves are narrow.For each genotype, the phenotypic mean is plotted, with error bars at ± 1 SE (Figure 4).
-
-![Figure 3. Results from interval (green) and composinte interval (blue) mapping of pollen viability in Mimulus. A: Comparison of LOD profile of IM and CIM QTL mapping based on EM; B: Comparison of LOD profile of IM and CIM QTL mapping based on HK; C: Comparison of IM and CIM at chromosome 6; D: Comparison of IM and CIM at chromosome 13.](http://i.imgur.com/mYubLD0.png)
+![Figure 3: Phenotype by genotype at the marker correspondent to QTL 13 (A and B) and QTL 6 (C and D)](http://i.imgur.com/MDJVlfR.png)
 
 \ \ 
 
-![Figure 4: Phenotype by genotype at the marker correspondent to QTL 13 (A and B) and QTL 6 (C and D)](http://i.imgur.com/MDJVlfR.png)
+Differences between IM and CIM are presented for each method, EM (Figure 4.A) and HK (Figure 4.B). Considering both, it’s possible to verify that CIM provides a better mapping resolution, which is evident by its long narrow peaks (Figure 4.C and 4.D) instead of the wide LOD profile given by IM. Accordingly, CIM methodology results in a more accurate estimation of QTL position when compared to IM, since the latter has a greater confidence interval for it. 
+
+![Figure 4. Figure 4. Results from Interval Mapping (green) and Composite Interval Mapping (blue) for pollen viability trait in Mimulus sp. A) Comparison of IM and CIM LOD profile based on QTL mapping using EM; B) Comparison of IM and CIM LOD profile based QTL mapping using HK; C) Comparison of IM and CIM at chromosome 6; D) Comparison of IM and CIM at chromosome 13.](http://i.imgur.com/mYubLD0.png)
 
 \ \ 
 
 *Multiple Interval Mapping*
 
-Genetic map with identified QTL are presented in Figure 5.A. Using MIM, we also detected 3 QTL, but one of them was different . QTLs in the linkage group 6 and 13 were identified, as in IM and CIM, and a new one was found in linkage group 8 (Figure 5.B). This new QTL had smaller effect compared to the other (Table 3). 
-A great advantage in the use of MIM is the possibility to verify epistatic interactions between QLTs. Therefore, we can check that QTL in chromosome 6 and 13 interact (Figure 6), what may explain the detection of both in all QTL methods used. Comparing the LOD score curve of CIM and MIM, it is possible to confirm that they detected QTL 6 and 13 in the same position, once the peak of curves was in the same loci (Figure 5.D and Table 3). Peak on chromosome 8 for CIM was also identified, but not enough to cross the permutation threshhold.
+Using MIM, 3 QTL were detected, but one of them was different from CIM approach (Figure 5.A). QTL in chromosomes 6 and 13 were identified, as by IM and CIM, and a new one was found in chromosome 8 (Figure 5.B). This new QTL had smaller effect compared to the others (Table 3). 
+A great advantage in the use of MIM is the possibility to verify epistasis, that is, interactions between QLTs. In our case, we can observe that QTL in chromosome 6 and 13 interact (Figure 6), what may explain the detection of both of them in all QTL mapping methods used (IM, CIM and MIM). 
+Comparing the CIM and MIM LOD score profiles, it is possible to confirm they detected QTL in the same regions by the localization of peaks (Figure 5.D) and their positions are identical (Table 3). As we can see in Figure 5.C, a peak on chromosome 8 was also identified for CIM, but not strong enough to cross the permutation threshold. Other important information concerning the QTL detected using MIM can be accessed in Table 3.
 
 ![Figure 5. Results from multiple interval mapping of pollen viability in Mimulus. A: Genetic map estimated from MIM; B: LOD profile obtained from MIM; C: LOD profile obtained from CIM; D: Comparison of CIM (black) and MIM (coloured) at significant QTL from MIM.](http://i.imgur.com/JcMAlUX.png)
 
-![Figure 6: Epistasis interactions among mapped QTLs.](http://i.imgur.com/1RzMPrN.png)
+![Figure 6: Epistatic interactions among mapped QTLs.](http://i.imgur.com/1RzMPrN.png)
 
 \ \ 
 
