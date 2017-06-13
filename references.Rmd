@@ -16,6 +16,8 @@ Broman, K. W., H. Wu, S. Sen, and G. A. Churchill, 2003 R/qtl: QTL mapping in ex
 
 Fishman, L.A., Kelly, J., Morgan, E., Willis, J.H., 2001 A genetic map in the Mimulus guttatus species complex reveals transmission ratio distortion due to heterospecific interactions. Genetics 159: 1701-1716.
 
+Fishman, L. A., and J. H. Willis, 2001 Evidence for Dobzhansky-Muller Inteincompatibilities contributing to the sterility of hybrids between Mimulus guttatus and M. nasutus. Evolution 55: 1932–1942
+
 Kosambi, D.D., 1944 The estimation of map distance from recombination values. Annuaire of Eugenetics 12:172-175.
 
 Margarido, G.R., Souza, A.P, Garcia, A.A.F., 2007 OneMap: software for genetic mapping in outcrossing species. Hereditas 144:78-79.
