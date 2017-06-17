@@ -1,14 +1,11 @@
-##################################
-##                              ##
-##   QTL Mapping - IM and CIM   ##
-##                              ##
-##################################
+########################################
+##                                    ##
+##   QTL Mapping - IM, CIM, and MIM   ##
+##                                    ##
+########################################
 
 library(qtl)
-library(onemap)
 library(knitr)
-library(kableExtra)
-library(reshape2)
 
 # Importing
 data <- read_mapmaker(dir=getwd(), file="m_feb06.raw")
@@ -303,11 +300,6 @@ plotLodProfile(stepQtl)
 # CIM: não considera o 8 como significativo (verificar pelo threshold)
 plot(CIMscan_em, chr=c(6,8,13), col=c("blue"), incl.markers = T, show.marker.names = F, bandcol="lightgray")
 add.threshold(out=CIMscan_em, perm=perCIM_em,col="red",lwd=2)
-
-cxm <- data.frame("CIM"=c("Chr 6 - pos 185", "-", "Chr 13 - pos 58"),
-                  "MIM"=c("Chr 6 - pos 186", "Chr 8 - pos 87", "Chr 13 - pos 56"))
-
-#kable(cxm)
 
 plot(CIMscan_em, chr=c(6,8,13), col=c("black"), ylim = c(0,20)) # CIM: apenas 6 e 13 signif
 plotLodProfile(stepQtl, lty = c("solid", "solid", "solid"), 
